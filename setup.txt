@@ -1,0 +1,13 @@
+# Install Chocolatey
+
+choco install --confirm microsoft-windows-terminal slack vscode zoom
+del C:\Users\Public\Desktop\"Visual Studio Code".lnk
+
+# Apps installed in Microsoft Store:
+# - Spotify
+
+# Apps installed manually:
+# - Factorio
+
+# Apps uninstalled:
+# - 
