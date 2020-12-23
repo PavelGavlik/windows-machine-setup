@@ -1,13 +1,25 @@
-# Install Chocolatey
+# Install WSL
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-choco install --confirm microsoft-windows-terminal slack vscode zoom
-del C:\Users\Public\Desktop\"Visual Studio Code".lnk
+## Download the Linux kernel update package
+https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
+
+wsl --set-default-version 2
+
+
+# Install Chocolatey
+choco install --confirm k-litecodecpackbasic microsoft-windows-terminal slack steam vscode zoom
+
+
+# TODO: hide desktop icons
+
 
 # Apps installed in Microsoft Store:
 # - Spotify
 
 # Apps installed manually:
-# - Factorio
+# - Factorio, Transmission 2.x, VLC
 
 # Apps uninstalled:
 # - 
